@@ -1,0 +1,35 @@
+.center-add-image{
+  text-align: center;
+}
+
+.add{
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0rem;
+
+  &__image{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &__image-for-phones{
+    display: none;
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
+
+  @include respond(tablet_land){
+    display: none;
+
+    &__image{
+      max-width: 300px;
+    }
+
+    &__image-for-phones{
+      display: block;
+
+    }
+  }
+}
+

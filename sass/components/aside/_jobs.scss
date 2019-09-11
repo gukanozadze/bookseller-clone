@@ -1,0 +1,18 @@
+.jobs{
+  background: white;
+  padding: 1.7rem 2rem 0rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+
+  &__list{
+
+    li{
+      padding: 1rem 1.3rem;
+
+      &:not(:first-of-type){
+        border-top: 1px solid $color-grey-lighter;
+      }
+    }
+  }
+
+}

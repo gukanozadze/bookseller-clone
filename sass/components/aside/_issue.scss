@@ -1,0 +1,49 @@
+.issue{
+
+  display: flex;
+  padding: .8rem 2rem;
+  justify-content: space-evenly;
+
+  &__image{
+    transform: rotate(-5deg);
+
+    img{
+      width: 100%;
+      max-width: 180px;
+
+    }
+  }
+
+  &__content{
+    margin-left: 2rem;
+
+    & > * {
+      padding: 1rem 0rem;
+      
+      &:not(:first-of-type){
+        border-top: 1px solid $color-grey-lighter;
+      }
+  
+    }
+
+    h4{
+      font-size: $smaller-font-size;
+      font-weight: 500;
+
+      a{
+        color: $color-orange;
+        text-decoration: underline;
+        font-size: inherit;
+        font-weight: 400;
+      }
+
+      &.lighter{
+        color: $color-grey-darker;
+        font-size: 1rem;
+      }
+
+      &.small{font-size: $smallest-font-size}
+
+    }
+  }
+}

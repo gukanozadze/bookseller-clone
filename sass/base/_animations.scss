@@ -1,0 +1,9 @@
+@keyframes slideLeft {
+  from {width: 0%;}
+  to {width: $navigation-width}
+}
+
+@keyframes slideRight {
+  from {width: $navigation-width;}
+  to {width: 0%}
+}

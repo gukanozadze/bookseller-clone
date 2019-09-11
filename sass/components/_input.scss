@@ -1,0 +1,44 @@
+.search{
+
+
+  display: flex;
+  align-self: stretch;
+  
+  .input{
+    border: none;
+    line-height: 1.3;
+    min-height: 30px;
+    color: white;
+    text-align: left;
+
+    &--search{
+      
+      width: 14rem;
+      font-size: 1.4rem;
+      padding:  0.8rem 4rem  0.8rem 0.8rem;
+      background-color: #7C7C7C;
+      
+      &::placeholder{
+        color: white;
+      }
+    }
+    
+  }
+
+  &__icon-box{
+    background: $color-grey-bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+
+    i{
+
+      color: white;
+      font-size: 13px;
+    }
+
+  }
+  
+}

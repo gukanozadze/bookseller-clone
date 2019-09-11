@@ -1,0 +1,52 @@
+.more-link{
+  position: relative;
+  text-align: center;
+  padding: 2rem 0;
+  
+  &::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-orange;
+  }
+
+  &.purple::after{
+    background-color: $color-purple;
+  }
+
+  &.muted::after{
+    background-color: $color-grey-lighter;
+  }
+
+  a{
+    padding: .6rem 1.6rem;
+    font-size: $small-font-size;
+    background-color: white;
+    color: $color-grey-dark;
+    font-weight: 600;
+    border: 1px solid $color-orange;
+    z-index: 1;
+    position: relative;
+
+    &.arrow::after{
+      @include right-arrow;
+      margin-left: .8rem;
+      color: $color-grey-dark;
+      
+    }
+    
+
+    &.purple{ border: 1px solid $color-purple; }
+
+    &.muted{ 
+      border: 1px solid $color-grey-lighter; 
+      font-size: $small-font-size;
+    
+    }
+  }
+
+  
+}

@@ -1,0 +1,27 @@
+
+  .content__aside--cards .card{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid $color-grey-lighter;
+
+    &:not(:first-child){margin-top: 1rem;}
+
+    @include respond(phone){
+      margin-top: 0 !important;
+    }
+    &__image{width: 100%;}
+
+    &__text{
+      padding: .8rem 1.5rem 1rem;
+      text-align: left;
+      line-height: 1.2;
+    }
+  }
+
+  .social-links{
+    margin-top: 1rem;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  

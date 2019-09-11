@@ -1,0 +1,73 @@
+/*
+
+phone - 600px
+tablet_port - 900px
+tablet_land - 1100px
+
+
+ORDER: base + typography > general layout + grid > page layout > components*/
+
+@mixin respond($breakpoint){
+  @if $breakpoint == phone{
+      @media (max-width: 600px){ @content; }
+  }
+
+  @if $breakpoint == tablet_port{
+      @media (max-width: 900px){ @content; }
+  }
+
+  @if $breakpoint == tablet_land{
+      @media (max-width: 1100px){ @content; }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin right-arrow{
+  content: '';
+  width: .9rem;
+  height: .9rem;
+  display: inline-block;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  transform: rotate(225deg);
+}
+
+@mixin clear-after{
+  content: '';
+  margin: none;
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border-bottom: none;
+  border-left: none;
+  margin: 0;
+}
+
+@mixin round-image{
+  border-radius: 50%;
+  border: 1px solid $color-orange;
+  padding: .4rem;
+}
+
+@mixin legend-border{
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 25%;
+  height: 1px;
+  background-color: $color-grey-lighter;
+}

@@ -1,0 +1,46 @@
+.blog{
+
+  padding: 1.7rem 2rem 0rem;
+  background: white;
+
+  &__media{
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    
+    @include respond(phone){
+      grid-template-columns: 22% 78%;
+
+    }
+    
+    &--image-wrapper{
+
+      img{
+        width: 100%;
+        @include round-image;
+      }
+    }
+  
+    &--content{
+  
+      margin-left: 2rem;
+
+      h6:last-of-type{
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__content{
+
+    &--item{
+      padding: 1rem 0rem;
+      border-top: 1px solid $color-grey-lighter;
+      
+      h3{
+        margin-bottom: .2rem;
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,53 @@
+footer{
+  width: 100%;
+  background: $color-grey-lighter;
+  padding: 2rem 0;
+  margin-top: 4.5rem;
+  
+  .footer-content{
+    
+    & > *{padding: 1rem 0;}
+
+    color: $color-grey-dark;
+
+    &__site-map{
+      border-bottom: 1px solid #CDCDCD;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      
+      &--navigation{
+        a{
+          font-size: $smaller-font-size;
+          margin-right: 1.4rem;
+          color: inherit;
+        }
+      }
+
+      &--copyright{
+        font-size: $small-font-size;
+        color: inherit;
+
+        @include respond(tablet_land){
+          margin-top: 1rem;
+        }
+      }
+
+      
+    }
+
+    &__sign-off{
+      display: flex;
+      justify-content: space-between;
+
+      &--logo{
+        img{width: 60%;}
+      }
+
+      &--extra{
+        font-size: $smaller-font-size;
+        color: inherit;
+      }
+    }
+  }
+}

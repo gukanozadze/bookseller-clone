@@ -1,0 +1,32 @@
+.chart{
+  background: white;
+  padding: 1.7rem 2rem 0rem;
+  margin-bottom: 1.6rem;
+  &__table{
+
+    &--item{
+      display: grid;
+      grid-template-columns: 15% 15% 70%;
+      align-items: center;
+      text-align: center;
+      border: 1px solid $color-grey-lighter;
+
+      &:not(:last-of-type){border-bottom: none}
+      &:nth-child(even){ background-color: $color-grey-lightest; }
+
+      .id{font-size: $bigger-font-size;}
+
+      img{width: 100%;}
+      .description{
+        text-align: left;
+        margin-left: 1rem;
+      }
+    }
+  }
+
+
+  .legend{
+    &::before, &::after{ width: 13%; }
+    margin-bottom: 1.5rem;
+  }
+}

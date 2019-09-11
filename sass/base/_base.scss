@@ -1,0 +1,42 @@
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html{
+  font-size: 62.5%;
+  line-height: 1.4;
+  font-family: 'poppins', sans-serif;
+
+  @include respond(tablet_port){
+    font-size: 56.2%;
+    // font-size: 56.2%;
+  }
+
+  @include respond(phone){
+    font-size: 50%;
+  }
+}
+
+body{
+  background-color: $background-color;
+  display: block;
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 2.5rem;
+}
+.row{
+  max-width: $base-width; 
+  margin: 0 auto;
+
+  @include respond(tablet_land){
+    padding: 0 2rem;
+  }
+}
+
+.mt-1{ margin-top: 1rem;}
+ul{list-style: none}

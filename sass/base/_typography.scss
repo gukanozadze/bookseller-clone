@@ -1,0 +1,151 @@
+a{
+  text-decoration: none;
+  color: $color-grey-dark;
+  font-size: $small-font-size;
+  display: inline-block;
+
+  &.comment-title{
+    font-weight: 600;
+    font-size: $small-font-size;
+  }
+
+  &.light{
+    font-size: $smallest-font-size;
+    color: $color-grey-light;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &.h5{
+    display: inline-block;
+    color: $color-orange;
+    font-size: $small-font-size;
+    font-weight: 600;
+
+    &.muted{color: $color-grey-light;}
+
+    &.arrow::after{
+      @include right-arrow;
+      margin-left: 2px;
+      color: inherit;
+    }
+
+  }
+}
+
+
+h2{font-size: $bigger-font-size;}
+
+h3{
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: $color-grey-dark;
+  cursor: pointer;
+
+
+  &.underline{
+    display: flex;   
+    cursor: auto;
+
+    &::after{
+      content: '';
+      margin-bottom: .7rem;
+      margin-left: .7rem;
+      flex-grow: 1;
+      border-bottom: 1px solid $color-orange;
+    }
+
+    &.purple::after{border-bottom: 1px solid $color-purple;}
+  }
+
+  
+}
+
+h4{
+
+  color: $color-grey-dark;
+  font-size: $default-font-size;
+
+  &.light{font-weight: 400;}
+
+  &.white{color: white;}
+
+  &.legend{
+    font-size: $legend-font-size !important;
+    position: relative;
+    width: 100%;
+    margin-bottom: .5rem;
+    text-align: center;
+
+    &::before, &::after{ @include legend-border; }
+    &::before{ left: 0;}
+    &::after{ right: 0; }
+
+    &.orange{
+      font-size: $default-font-size;
+      &::before{ background-color: $color-orange; }
+      &::after{ background-color: $color-orange; }
+    }
+
+    &.purple{
+      font-size: $default-font-size;
+      &::before{ background-color: $color-purple; }
+      &::after{ background-color: $color-purple; }
+    }
+  }
+}
+
+
+h5{
+  display: inline-block;
+  color: $color-orange;
+  font-size: $small-font-size;
+
+  &::after{
+    @include right-arrow;
+    margin-left: 2px;
+    color: inherit;
+  }
+
+  &.muted{
+    color: $color-grey-light;
+
+    &::after{
+      @include clear-after
+      
+    }
+  }
+}
+
+
+h6{
+  font-size: $smaller-font-size;
+  color: $color-grey-dark;
+  font-weight: 500;
+
+  &.light{
+    font-weight: 400;
+    font-size: $smallest-font-size;
+  }
+
+  
+
+  &.white{color: white;}
+
+  
+}
+
+
+p{
+  margin-right: .4rem;
+
+  font-size: $smaller-font-size;
+  color: $color-grey-light;
+
+  &.small{
+  font-size: $smallest-font-size;
+
+  }
+}

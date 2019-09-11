@@ -1,0 +1,19 @@
+.popular{
+  padding: 1.7rem 2rem .5rem;
+  border: 1px solid $color-grey-lighter;
+  margin-bottom: 1.6rem;
+  &__item{
+    padding: 1rem 0rem;
+
+    &:not(:first-of-type){
+      border-top: 1px solid $color-grey-lighter;
+    }
+
+  }
+
+  .legend{
+    &::before, &::after{
+      width: 23%;
+    }
+  }
+}

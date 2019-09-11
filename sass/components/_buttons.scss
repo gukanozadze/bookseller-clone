@@ -1,0 +1,44 @@
+.btn{
+  text-decoration: none;
+  border: none;
+  line-height: 1.3;
+  padding: .8rem;
+  background: none;
+  color: black;
+  font-size: $small-font-size;
+  cursor: pointer;
+
+
+  &--blue{
+    color: white;
+
+    background-color: $btn-blue;
+    i{background-color: $btn-blue-darker; }
+  }
+
+  &--gold{
+    color: white;
+
+      background-color: $btn-gold;
+    i{background-color: $btn-gold-darker;}
+  }
+
+  &--orange{
+    color: white;
+    background-color: $color-orange;
+    h5{color: white; ::after{color: white;}}
+  }
+
+  i{
+
+    font-size: 14px;
+    overflow: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+
+
+  
+
+  
